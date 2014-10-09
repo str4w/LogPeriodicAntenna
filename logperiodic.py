@@ -11,7 +11,7 @@ def main(l_1,d_1,k,N):
    theDistances =[sum(theIndividualDistances[:(i+1)]) for i in range(N)]
    for i in range(N):
       print "%d:"%i,cmAndInches(theLengths[i])," : ",cmAndInches(theDistances[i]), " : ",cmAndInches(theIndividualDistances[i]), " : ", 15000./theLengths[i]
-   print "\nTotal Dipole Material Length Required:",sum(theLengths)
+   print "\nTotal Dipole Material Length Required:",sum(theLengths)*2
 
 if __name__ == "__main__":
    if(len(sys.argv) != 5):
